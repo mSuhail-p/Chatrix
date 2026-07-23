@@ -1,0 +1,13 @@
+.main{
+    background-image: url('../../public/background.jpg');
+    background-size: cover;
+}
+.scrollable {
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollable::-webkit-scrollbar {
+  display: none;
+}
