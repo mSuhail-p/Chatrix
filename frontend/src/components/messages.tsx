@@ -1,4 +1,3 @@
-
 // import { useState, useRef, useEffect } from "react";
 // import socket from "../socket.io";
 // import { BsThreeDotsVertical } from "react-icons/bs";
@@ -116,18 +115,16 @@
 
 // export default Messages;
 
-
-
 import { useState, useRef, useEffect } from "react";
 import socket from "../socket.io";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { RiAttachment2 } from "react-icons/ri";
 import { LuSend } from "react-icons/lu";
 import { IoMdArrowBack } from "react-icons/io";
-import type { Messages, chatSection } from "../interfaces/home.ts";
+import { type Messages, type chatSectionProp } from "../interfaces/home.ts";
 
 import "./messages.css";
-const Messages = ({ user, onBack }: chatSection) => {
+const ChatSection = ({ user, onBack }: chatSectionProp) => {
   const reff = useRef<HTMLTextAreaElement>(null);
   const [message, setMessage] = useState<Messages[]>([]);
 
@@ -240,4 +237,4 @@ const Messages = ({ user, onBack }: chatSection) => {
   );
 };
 
-export default Messages;
+export default ChatSection;

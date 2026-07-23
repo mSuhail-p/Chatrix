@@ -8,8 +8,8 @@ export interface User {
   age: number;
 }
 
-export interface chatSection {
-  user: User;
+export interface chatSectionProp {
+  user: { name: string; age: number };
   onBack: () => void;
 }
 
